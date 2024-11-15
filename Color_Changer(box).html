@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change color of box</title>
+    <link rel="stylesheet" href="H2.css">
+
+    <style>
+        #colorBox{
+            width: 200px;
+            height: 200px;
+            border: 5px solid;
+            padding: 20px;
+            margin: 20px;
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1> Change the Color of Box </h1>
+   
+    <div id="colorBox"></div>
+    <button id="b" onclick="changeColor()"> Change </button>
+    
+
+   
+   
+    <script>
+
+        function changeColor()
+        {
+            var colorBox = document.getElementById("colorBox")
+            var randomColor = getRandomColor()
+            colorBox.style.backgroundColor = randomColor
+            // colorBox.style.backgroundColor = getRandomColor;
+    
+        }
+
+        
+        function getRandomColor()
+        {
+           var letters = '0123456789ABCDEF'
+           var color = '#'
+           for (var i = 0; i<6; i++){
+            color += letters[Math.floor(Math.random() * 16)]
+           }
+            
+           return color 
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value</title>
+</head>
+<body>
+    <h2 id="a"> Welcome </h2>
+    <input id="myText" placeholder="Enter Heading">
+    <button id="mySubmit"> Text </button>
+
+    <script>
+        document.getElementById('mySubmit').onclick = function(){
+            box = document.getElementById('myText').value
+            console.log(box)
+            document.getElementById('a').textContent = "Hello" +" " + box
+        }
+    </script>
+</body>
+</html>

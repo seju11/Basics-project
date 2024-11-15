@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Change</title>
+    <link rel="stylesheet" href="H1.css">
+</head>
+<body>
+   <center><h1> Change Color on Click </h1></center>
+   <center>
+        <button id="R" onclick="changeColor('R')"> Red </button>
+        <button id="G" onclick="changeColor('G')"> GREEN </button>
+        <button id="B" onclick="changeColor('B')"> Blue </button>
+        <button id="Y" onclick="changeColor('Y')"> YELLOW </button>
+        <button id="P" onclick="changeColor('P')"> PINK </button>
+   </center>
+
+
+   <script>
+
+        // buttonId = document.getElementById(R)
+
+        function changeColor(buttonId)
+        {
+            var color
+            switch (buttonId) {
+                case 'R':
+                    document.body.style.backgroundColor = 'red'
+                    break;
+                
+                case 'G':
+                    document.body.style.backgroundColor = 'green'
+                    break;
+                    
+                case 'B':
+                    document.body.style.backgroundColor = 'blue'
+                    break;
+
+                case 'Y':
+                    document.body.style.backgroundColor = 'yellow'
+                    break;
+
+                case 'P':
+                    document.body.style.backgroundColor = 'pink'
+                    break;
+            }
+        }
+
+        
+   </script>
+</body>
+</html>

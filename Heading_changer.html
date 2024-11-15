@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work</title>
+    <link rel="stylesheet" href="HomeWork.css">
+</head>
+<body>
+    <h1 id="a" style="text-align: center; background-color: blueviolet; color: bisque; border-radius: 3px;"> I am learning JS </h1>
+    <center><button onclick="simple()">Change</button></center>
+
+    <script>
+
+        a = document.getElementById('a')
+        
+        function simple()
+        {
+            // document.getElementById('a')
+            // a.textContent ="JS is Easy"
+            // a.style.color ='White'
+            // a.style.textAlign ='Center'
+            // a.style.background ='Blue'
+            // a.style.borderRadious ='100px'
+
+            if (a.textContent == "I am learning JS" )
+            {
+                a.textContent = "JS is Easy"
+            }
+            else 
+            {
+                a.textContent ="I am learning JS"
+            }
+
+        }
+
+    </script>
+</body>
+</html>

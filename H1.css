@@ -1,0 +1,33 @@
+body{
+    background-color: whitesmoke;
+}
+
+H1{
+    background-color: rgb(234, 181, 234);
+    color: royalblue;
+}
+
+#R{
+    background-color: white;
+    border-radius: 10px;
+}
+
+#G{
+    background-color: white;
+    border-radius: 10px;
+}
+
+#B{
+    background-color: white;
+    border-radius: 10px;
+}
+
+#Y{
+    background-color: white;
+    border-radius: 10px;
+}
+
+#P{
+    background-color: white;
+    border-radius: 10px;
+}
